@@ -1,0 +1,33 @@
+{
+  "application": "BiDiWhisper",
+  "version": "0.3.0",
+  "platform": "windows-x86_64",
+  "release_date": "2026-11-10",
+  "channel": "public-preview",
+  "installer": {
+    "file": "BiDiWhisper_0.3.0_x64-setup.exe",
+    "bytes": 253239875,
+    "sha256": "ddb2b0307e282bc7f35ceb584302d2e9d55f37cdeaa2b0cce0d093670ba613cd",
+    "signed": false,
+    "url": "https://github.com/halilozturkci/BiDiWhisper-releases/releases/download/v0.3.0/BiDiWhisper_0.3.0_x64-setup.exe"
+  },
+  "model_weights_included": false,
+  "models": {
+    "whisper": "Whisper large-v3-turbo Q8_0; approximately 886 MB",
+    "qwen": "Qwen3.5-4B Q4_K_M; optional; approximately 2.74 GB"
+  },
+  "requirements": "Windows x64; initial model download or local model files; offline inference after model setup",
+  "validation": {
+    "payload_files_checked": 147,
+    "portable_install": true,
+    "normal_user_install": true,
+    "speech_inference": true,
+    "local_translation": true
+  },
+  "limits": [
+    "Unsigned preview",
+    "Clean Windows installation without WebView2 not yet validated",
+    "No macOS or Windows ARM64 installer in this release",
+    "Model output can contain errors"
+  ]
+}
